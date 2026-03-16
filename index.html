@@ -1,115 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Go Runners | CPT208</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Runners | CPT208</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
-
 <body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">GO RUNNERS · D-7</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#prototype">Prototype</a></li>
+        <li><a href="#evaluation">Evaluation</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<nav class="navbar">
+  <main>
+    <!-- Hero 着陆区 -->
+    <section class="hero reveal" id="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker">CPT208 · Human-Centric Computing</p>
+        <h1>Run Together. Run Further.</h1>
+        <p class="hero-subtitle">
+          A playful, human‑centred running experience for communities and organizers.
+        </p>
+        <div class="hero-actions">
+          <button id="exploreBtn" class="btn-primary">Explore the journey</button>
+          <a href="#prototype" class="btn-ghost">View prototype highlights</a>
+        </div>
+      </div>
+    </section>
 
-<div class="logo">GO RUNNERS</div>
+    <!-- 项目简介 -->
+    <section class="section reveal" id="intro">
+      <div class="section-header">
+        <h2>Project Introduction</h2>
+        <p class="section-subtitle">
+          High‑level overview of Go Runners and course context.
+        </p>
+      </div>
+      <div class="section-body">
+        <p class="placeholder-text">
+          Placeholder for project background, goals, and target users.
+        </p>
+      </div>
+    </section>
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Research</a></li>
-<li><a href="#">Design</a></li>
-<li><a href="#">Prototype</a></li>
-<li><a href="#">Evaluation</a></li>
-</ul>
+    <!-- User Research -->
+    <section class="section reveal" id="research">
+      <div class="section-header">
+        <h2>User Research</h2>
+        <p class="section-subtitle">
+          How we understood runners and organizers.
+        </p>
+      </div>
+      <div class="section-body two-column">
+        <article class="card">
+          <h3>Methods</h3>
+          <p class="placeholder-text">
+            Placeholder for interviews, surveys, and other research methods.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Key Insights</h3>
+          <p class="placeholder-text">
+            Placeholder for 3–5 main findings and design opportunities.
+          </p>
+        </article>
+      </div>
+    </section>
 
-</nav>
+    <!-- Design Process -->
+    <section class="section reveal" id="design">
+      <div class="section-header">
+        <h2>Design Process</h2>
+        <p class="section-subtitle">
+          From early ideas to refined concepts.
+        </p>
+      </div>
+      <div class="section-body timeline">
+        <div class="timeline-item">
+          <h3>Exploration</h3>
+          <p class="placeholder-text">Placeholder for sketches and early concepts.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Concept Development</h3>
+          <p class="placeholder-text">Placeholder for scenarios and storyboards.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Interaction Flow</h3>
+          <p class="placeholder-text">Placeholder for information architecture and flows.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Prototype -->
+    <section class="section reveal" id="prototype">
+      <div class="section-header">
+        <h2>Prototype</h2>
+        <p class="section-subtitle">
+          Making Go Runners tangible for users.
+        </p>
+      </div>
+      <div class="section-body two-column">
+        <article class="card">
+          <h3>Prototype Overview</h3>
+          <p class="placeholder-text">
+            Placeholder for describing the main screens and interactions.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Key Interactions</h3>
+          <p class="placeholder-text">
+            Placeholder for showing 2–3 important user flows.
+          </p>
+        </article>
+      </div>
+    </section>
 
-<section class="hero">
+    <!-- Evaluation -->
+    <section class="section reveal" id="evaluation">
+      <div class="section-header">
+        <h2>Evaluation</h2>
+        <p class="section-subtitle">
+          What we learned from testing and reflection.
+        </p>
+      </div>
+      <div class="section-body two-column">
+        <article class="card">
+          <h3>Methods</h3>
+          <p class="placeholder-text">
+            Placeholder for usability tests, heuristic evaluation, etc.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Findings & Future Work</h3>
+          <p class="placeholder-text">
+            Placeholder for main issues, improvements, and next steps.
+          </p>
+        </article>
+      </div>
+    </section>
 
-<h1>Run Together. Run Further.</h1>
+    <!-- Team -->
+    <section class="section reveal" id="team">
+      <div class="section-header">
+        <h2>Our Team</h2>
+        <p class="section-subtitle">CPT208 · Group D‑7 · Go Runners</p>
+      </div>
+      <div class="team-grid">
+        <article class="member-card">
+          <div class="member-avatar">KL</div>
+          <h3 class="member-name">Kaile Liu</h3>
+          <p class="member-role">Evaluation & Documentation</p>
+          <p class="member-id">2363286</p>
+        </article>
+        <article class="member-card">
+          <div class="member-avatar">ZP</div>
+          <h3 class="member-name">Zihang Peng</h3>
+          <p class="member-role">User Research Lead</p>
+          <p class="member-id">2363365</p>
+        </article>
+        <article class="member-card">
+          <div class="member-avatar">SF</div>
+          <h3 class="member-name">Sihan Feng</h3>
+          <p class="member-role">Prototype Engineer</p>
+          <p class="member-id">2363535</p>
+        </article>
+        <article class="member-card">
+          <div class="member-avatar">WT</div>
+          <h3 class="member-name">Wentao Tang</h3>
+          <p class="member-role">Interaction & Visual Design</p>
+          <p class="member-id">2361322</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-<p>CPT208 Human-Centric Computing</p>
+  <footer class="site-footer">
+    <p>© 2026 CPT208 · Group D‑7 · Go Runners</p>
+  </footer>
 
-<button id="exploreBtn">Explore Project</button>
-
-</section>
-
-
-<section class="about">
-
-<h2>Project Overview</h2>
-
-<p>
-Go Runners is a playful system designed to support runners and
-activity organizers through gamification and social interaction.
-</p>
-
-</section>
-
-
-<section class="features">
-
-<div class="card">
-<h3>Motivation</h3>
-<p>Encouraging active lifestyles through playful technology.</p>
-</div>
-
-<div class="card">
-<h3>User Research</h3>
-<p>Understanding runners and community organizers.</p>
-</div>
-
-<div class="card">
-<h3>Prototype</h3>
-<p>A web-based interactive system for running activities.</p>
-</div>
-
-</section>
-
-<section class="team">
-
-<h2>Our Team</h2>
-
-<div class="team-container">
-
-<div class="member-card">
-<h3>Kaile Liu</h3>
-<p>Student ID: 2363286</p>
-</div>
-
-<div class="member-card">
-<h3>Zihang Peng</h3>
-<p>Student ID: 2363365</p>
-</div>
-
-<div class="member-card">
-<h3>Sihan Feng</h3>
-<p>Student ID: 2363535</p>
-</div>
-
-<div class="member-card">
-<h3>Wentao Tang</h3>
-<p>Student ID: 2361322</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 CPT208 Group D-7</p>
-
-</footer>
-
-
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
