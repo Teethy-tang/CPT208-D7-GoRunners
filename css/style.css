@@ -198,10 +198,14 @@ main {
 }
 
 .hero-bg-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 100%;
   display: block;
-  transform: scale(1.04);
+  max-width: none;
+  transform: translate(-50%, -50%) scale(1.04);
   transform-origin: center center;
 }
 
@@ -911,6 +915,47 @@ main {
 }
 
 @media (max-width: 760px) {
+  .hero {
+    padding: 2.5rem 1rem 3rem;
+  }
+
+  .hero-inner {
+    width: min(100%, 32rem);
+    padding: 1.4rem 0.35rem 1.8rem;
+  }
+
+  .hero-bg-svg {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(0.75);
+  }
+
+  .hero-kicker {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.6rem, 18vw, 5.2rem);
+    letter-spacing: 0.02em;
+  }
+
+  .hero-subtitle {
+    font-size: 0.98rem;
+    letter-spacing: 0.04em;
+    margin: 0.95rem auto 1.4rem;
+  }
+
+  .hero-actions {
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-actions a {
+    width: min(100%, 20rem);
+  }
+
   .gap-columns {
     grid-template-columns: 1fr;
   }
