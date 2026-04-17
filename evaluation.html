@@ -10,7 +10,15 @@
   <header class="site-header">
     <nav class="navbar">
       <a class="logo" href="index.html">MoodRun // D-7</a>
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label="Toggle navigation menu">
+        <span>Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <ul class="nav-links" id="site-nav-links">
         <li><a href="motivation.html">1. Motivation & Research</a></li>
         <li><a href="requirements.html">2. User Requirements</a></li>
         <li><a href="ideation.html">3. Ideation & Alternatives</a></li>
@@ -112,6 +120,7 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/mobile-nav.js"></script>
   <script src="js/section-nav.js"></script>
 </body>
 </html>
