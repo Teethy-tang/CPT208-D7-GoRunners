@@ -34,29 +34,63 @@
         <h1>3. Ideation & Alternatives</h1>
         <p class="section-subtitle">Structured by coursework requirements: Crazy Eights, Design Alternatives, Low-Fi Prototype.</p>
       </div>
-      <div class="section-body two-column">
-        <article class="card">
+      <div class="section-body">
+        <article class="card sketch-board">
           <h3>The Crazy Eights</h3>
-          <p>We produced eight rapid hand-drawn concepts to explore interaction diversity within limited time.</p>
-          <ul class="clean-list">
-            <li>Sketch 1: Mood wheel start screen.</li>
-            <li>Sketch 2: Route recommendation by emotional state.</li>
-            <li>Sketch 3: Companion prompt timeline.</li>
-            <li>Sketch 4: Gamified breathing mini-challenge.</li>
-            <li>Sketch 5: Music tempo adaptation panel.</li>
-            <li>Sketch 6: Community encouragement mode.</li>
-            <li>Sketch 7: Post-run reflection cards.</li>
-            <li>Sketch 8: Weekly wellbeing dashboard.</li>
-          </ul>
-          <p class="note">Action: upload 8 sketch photos here before final submission.</p>
-        </article>
-        <article class="card">
-          <h3>Sketching Insights</h3>
-          <ul>
-            <li>Users need a very fast entry interaction (under 10 seconds).</li>
-            <li>Emotion adaptation should remain visible but not distracting during runs.</li>
-            <li>Post-run reflection can be playful without adding cognitive burden.</li>
-          </ul>
+          <p>
+            We explored different UI directions for three key moments in the MoodRun experience:
+            the main page, mood choosing, and the running page.
+          </p>
+
+          <section class="sketch-row">
+            <h4>Main Page</h4>
+            <div class="sketch-strip">
+              <figure>
+                <img class="sketch-image" src="main-page-ui1.jpg" alt="Main page UI idea 1 sketch" />
+                <figcaption>Idea 1</figcaption>
+              </figure>
+              <figure>
+                <img class="sketch-image" src="main-page-ui2.jpg" alt="Main page UI idea 2 sketch" />
+                <figcaption>Idea 2</figcaption>
+              </figure>
+              <figure>
+                <img class="sketch-image" src="main-page-ui3.jpg" alt="Main page UI idea 3 sketch" />
+                <figcaption>Idea 3</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="sketch-row">
+            <h4>Mood Choosing</h4>
+            <div class="sketch-strip sketch-strip-two">
+              <figure>
+                <img class="sketch-image" src="mood-choosing-ui1.jpg" alt="Mood choosing UI idea 1 sketch" />
+                <figcaption>Idea 1</figcaption>
+              </figure>
+              <figure>
+                <img class="sketch-image" src="mood-choosing-ui2.jpg" alt="Mood choosing UI idea 2 sketch" />
+                <figcaption>Idea 2</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="sketch-row">
+            <h4>Running Page</h4>
+            <div class="sketch-strip">
+              <figure>
+                <img class="sketch-image" src="running-page-ui1.jpg" alt="Running page UI idea 1 sketch" />
+                <figcaption>Idea 1</figcaption>
+              </figure>
+              <figure>
+                <img class="sketch-image" src="running-page-ui2.jpg" alt="Running page UI idea 2 sketch" />
+                <figcaption>Idea 2</figcaption>
+              </figure>
+              <figure>
+                <img class="sketch-image" src="running-page-ui3.jpg" alt="Running page UI idea 3 sketch" />
+                <figcaption>Idea 3</figcaption>
+              </figure>
+            </div>
+          </section>
         </article>
       </div>
     </section>
@@ -64,42 +98,147 @@
     <section class="section reveal">
       <div class="section-header">
         <h2>Design Alternatives</h2>
-        <p class="section-subtitle">Compare 2-3 approaches and justify the selected direction.</p>
+        <p class="section-subtitle">Compare interaction models and justify the selected direction.</p>
       </div>
-      <div class="section-body two-column">
+      <div class="section-body">
         <article class="card">
-          <h3>Alternative A: Competitive Challenge</h3>
-          <ul>
-            <li><strong>Strength:</strong> Strong motivation for high-performing runners.</li>
-            <li><strong>Weakness:</strong> Increases pressure for low-confidence users.</li>
-            <li><strong>Decision:</strong> Rejected as the core concept.</li>
-          </ul>
+          <p>
+            MoodRun had several design conflicts because the app needs to support both playful
+            freedom and meaningful running guidance. We compared different interaction models
+            before choosing the final approach.
+          </p>
         </article>
+
         <article class="card">
-          <h3>Alternative B: Mindfulness-First Running</h3>
-          <ul>
-            <li><strong>Strength:</strong> Supports stress recovery and calm pacing.</li>
-            <li><strong>Weakness:</strong> Too passive for users seeking progress.</li>
-            <li><strong>Decision:</strong> Partially adopted for tone design.</li>
-          </ul>
+          <h3>1. How Users Express Emotions</h3>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Alternative</th>
+                  <th>Description</th>
+                  <th>Limitation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Text Input Only</td>
+                  <td>Users freely type how they feel before running.</td>
+                  <td>Emotion expression is rich, but it takes more effort and may slow down the flow.</td>
+                </tr>
+                <tr>
+                  <td>Mood Selection Only</td>
+                  <td>Users choose from preset mood options.</td>
+                  <td>Fast and simple, but emotional expression can feel limited.</td>
+                </tr>
+                <tr>
+                  <td>Hybrid Mood Check-in</td>
+                  <td>Users can select a mood and optionally write a short reflection. A local rule-based Mood AI can suggest the closest mood.</td>
+                  <td>Slightly more complex, but gives both speed and personalisation.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h4 class="chosen-approach-title">Chosen Approach: Hybrid Mood Check-in</h4>
+          <p class="chosen-approach-copy">
+            We chose the hybrid approach because it best supports MoodRun's human-centred playful
+            design. Users who want a quick start can simply choose a mood, while users who want
+            deeper reflection can write their thoughts. The local mood assistant keeps the
+            experience personal without needing an external AI service.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>2. How to Handle Plan Distance vs User Route Distance</h3>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Alternative</th>
+                  <th>Description</th>
+                  <th>Limitation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Force Route to Match Plan</td>
+                  <td>The system automatically creates a route that exactly matches the plan distance.</td>
+                  <td>Difficult to implement reliably in a front-end prototype; road safety, walkability, rivers, bridges, and route quality are hard to guarantee.</td>
+                </tr>
+                <tr>
+                  <td>Ignore the Difference</td>
+                  <td>The app lets users choose any route without explaining the distance mismatch.</td>
+                  <td>Simple, but users may feel confused when the route distance and plan target do not match.</td>
+                </tr>
+                <tr>
+                  <td>Show Distance Difference and Let Users Decide</td>
+                  <td>The app displays the plan distance, route distance, and difference. If the difference is large, users choose either "Use Route Distance" or "Keep Plan Target".</td>
+                  <td>Requires an extra decision, but it is transparent and flexible.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h4 class="chosen-approach-title">Chosen Approach: Distance Difference + User Choice</h4>
+          <p class="chosen-approach-copy">
+            We chose to show the distance conflict clearly. For example, if the plan is 4.0 km
+            but the selected route is 2.3 km, MoodRun can show the difference and let the user
+            decide whether to use the actual route distance or keep the original plan target.
+            This fits MoodRun better than forcing an automatic detour, because the app is a
+            playful running companion, not a strict navigation system.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>3. How Strictly Users Must Follow the Route</h3>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Alternative</th>
+                  <th>Description</th>
+                  <th>Limitation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Strict Route Completion</td>
+                  <td>The run only counts if the user follows the recommended route closely.</td>
+                  <td>Too restrictive and makes the app feel like a serious navigation tool.</td>
+                </tr>
+                <tr>
+                  <td>Free Running Only</td>
+                  <td>The route is ignored once the run starts.</td>
+                  <td>Gives freedom, but the route setup feature becomes less meaningful.</td>
+                </tr>
+                <tr>
+                  <td>Recommended Route with Gentle Guidance</td>
+                  <td>The route is treated as a recommendation. The app gives start-point and off-route prompts, but does not stop or punish the user.</td>
+                  <td>Less strict, but better matches playful outdoor movement.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h4 class="chosen-approach-title">Chosen Approach: Recommended Route with Gentle Guidance</h4>
+          <p class="chosen-approach-copy">
+            We chose to treat routes as recommendations. If the user starts far from the planned
+            start point, MoodRun can display a gentle warning. If the user moves away from the
+            route, the app can show an off-route message. However, the run continues normally,
+            and the final summary records the user's real GPS distance, time, pace, and mood
+            change. This keeps the experience flexible, supportive, and playful.
+          </p>
         </article>
       </div>
     </section>
 
     <section class="section reveal">
-      <div class="section-body two-column">
+      <div class="section-header">
+        <h2>Low-Fi Prototype</h2>
+        <p class="section-subtitle">Clickable Modao prototype used to test the early MoodRun flow.</p>
+      </div>
+      <div class="section-body">
         <article class="card">
-          <h3>Selected Direction: MoodRun Hybrid</h3>
-          <ul>
-            <li>Combines adaptability, gentle encouragement, and progress visibility.</li>
-            <li>Balances wellbeing needs and exercise continuity.</li>
-            <li>Supports both low-energy recovery and high-energy challenge states.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Low-Fi Prototype (Clickable Figma)</h3>
-          <p><strong>Figma Link:</strong> <a href="#" aria-label="Figma low-fi prototype link">Add your clickable prototype URL here</a></p>
-          <p class="note">Action: replace with public Figma link and screenshot preview.</p>
+          <p><strong>Modao Link:</strong> <a href="https://modao.cc/proto/ilF0TvIjte75efNsunVqxa/sharing?view_mode=read_only&amp;screen=rbpVI4i99CLQQFtGx" aria-label="Modao low-fi prototype link">CPT208_D7 - Read-only prototype</a></p>
+          <p class="note">The low-fi prototype was created in Modao and shared as a read-only clickable prototype.</p>
         </article>
       </div>
     </section>

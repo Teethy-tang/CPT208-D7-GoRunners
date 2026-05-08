@@ -29,87 +29,395 @@
   </header>
 
   <main>
-    <section class="section reveal">
+    <section class="section reveal evaluation-page-title">
       <div class="section-header">
         <h1>5. Evaluation & Reflection</h1>
         <p class="section-subtitle">Structured by coursework requirements: Usability Testing, Iterative Refinement, Final Reflection.</p>
       </div>
-      <div class="section-body two-column">
+    </section>
+
+    <section class="section reveal evaluation-major-section">
+      <div class="section-header">
+        <h2>Usability Testing</h2>
+        <p class="section-subtitle">Alpha prototype testing, results, findings, and supporting evaluation data.</p>
+      </div>
+      <div class="section-body">
         <article class="card">
-          <h3>Usability Testing (Alpha Version)</h3>
-          <p><strong>Participants:</strong> 3 target users (student runners with different confidence levels).</p>
-          <p><strong>Tasks:</strong> mood check-in, start recommended run, complete post-run reflection.</p>
-          <p><strong>Method:</strong> moderated think-aloud + short post-test questionnaire.</p>
-          <ul>
-            <li>Finding 1: users understand mood check-in quickly.</li>
-            <li>Finding 2: adaptive prompt tone is preferred over rigid coaching.</li>
-            <li>Finding 3: users request clearer progress summary after each run.</li>
-          </ul>
+          <h3>5.1 Usability Testing with Alpha Prototype</h3>
+          <h4>Purpose</h4>
+          <p>
+            To evaluate whether MoodRun's Alpha prototype was understandable, usable, and
+            emotionally supportive, we conducted a small-scale usability test with three target
+            users. The test focused on whether users could complete the core journey smoothly
+            and whether the emotion-aware interaction helped reduce the pressure of starting a run.
+          </p>
+
+          <h4>Participants</h4>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Participant</th>
+                  <th>Profile</th>
+                  <th>Reason for Selection</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P1</td>
+                  <td>University student, occasional runner</td>
+                  <td>Represents young adults with study pressure and irregular exercise habits.</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>Young adult with interest in fitness apps</td>
+                  <td>Familiar with running apps and able to compare MoodRun with metric-driven tools.</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>University student who rarely runs</td>
+                  <td>Represents users who may face psychological barriers when starting exercise.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Testing Method</h4>
+          <p>Each participant was asked to interact with the Alpha version of MoodRun and complete the following tasks:</p>
+          <ol>
+            <li>Start a run from the home page.</li>
+            <li>Complete the mood check-in by selecting a mood and entering a short reflection.</li>
+            <li>Choose or accept a recommended running plan.</li>
+            <li>Enter the running screen and understand the displayed run data.</li>
+            <li>Complete the run summary and use the Wisdom Book reflection feature.</li>
+            <li>Visit the profile page to review previous emotional and running records.</li>
+          </ol>
+          <p>
+            During the test, we observed whether users could complete each task without guidance,
+            noted hesitation points, and collected short verbal feedback after the session.
+          </p>
         </article>
+
         <article class="card">
-          <h3>Testing Evidence</h3>
-          <ul>
-            <li>[ ] Add screenshot/photo of participant testing session.</li>
-            <li>[ ] Add anonymized quote from each participant.</li>
-            <li>[ ] Add concise table with task completion observations.</li>
-          </ul>
-          <p class="note">Action: replace checklist with real evidence before submission.</p>
+          <h3>5.2 Usability Testing Results</h3>
+          <p class="card-subtitle">Task completion and user response summary from the Alpha prototype test.</p>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Evaluation Focus</th>
+                  <th>Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Task completion</td>
+                  <td>All 3 participants successfully completed the main flow from mood check-in to Wisdom Book.</td>
+                </tr>
+                <tr>
+                  <td>Mood check-in clarity</td>
+                  <td>3/3 participants understood that the app begins with emotional state rather than performance goals.</td>
+                </tr>
+                <tr>
+                  <td>Run plan recommendation</td>
+                  <td>2/3 participants found the recommended plan easy to understand; 1 participant wanted more explanation of why the plan was recommended.</td>
+                </tr>
+                <tr>
+                  <td>Running screen readability</td>
+                  <td>2/3 participants understood distance, pace, time, and progress immediately; 1 participant felt the screen had slightly too much information.</td>
+                </tr>
+                <tr>
+                  <td>Wisdom Book reflection</td>
+                  <td>3/3 participants responded positively to the reflective quote feature.</td>
+                </tr>
+                <tr>
+                  <td>Overall emotional support</td>
+                  <td>3/3 participants felt MoodRun was more supportive than traditional metric-focused running apps.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>5.3 Key Findings</h3>
+          <p class="card-subtitle">Main insights from observation and participant feedback.</p>
+          <div class="finding-grid">
+            <section class="finding-item">
+              <h4>Finding 1: Mood check-in made the app feel more personal</h4>
+              <p>
+                Participants understood the emotional purpose of the system quickly. They felt that
+                starting with a mood selection made the experience feel less intimidating than opening
+                a traditional fitness tracker.
+              </p>
+              <blockquote class="quote-block">"The mood check-in made starting easier because it asked how I felt first."</blockquote>
+            </section>
+
+            <section class="finding-item">
+              <h4>Finding 2: Users liked the supportive tone, but wanted clearer recommendation logic</h4>
+              <p>
+                Most participants liked the idea of receiving a mood-based running plan. However, one
+                participant wanted the system to explain why a certain plan was suggested.
+              </p>
+              <p class="note">
+                Design implication: add a short explanation under the recommended plan, such as
+                "Recommended because you selected 'stressed': a gentle jog can help release tension
+                without pressure."
+              </p>
+            </section>
+
+            <section class="finding-item">
+              <h4>Finding 3: The running screen was useful, but should avoid feeling too performance-heavy</h4>
+              <p>
+                Participants appreciated seeing distance, pace, time, and progress. However, one user
+                commented that too many numbers could make the app feel similar to normal running apps.
+              </p>
+              <p class="note">
+                Design implication: keep key running data visible, but visually balance it with
+                supportive feedback, voice encouragement, and mood-based messages.
+              </p>
+            </section>
+
+            <section class="finding-item">
+              <h4>Finding 4: Reflection was the most emotionally meaningful part</h4>
+              <p>
+                All three participants responded positively to the Wisdom Book feature because it
+                connected the user's pre-run thought with a post-run emotional message.
+              </p>
+              <blockquote class="quote-block">"The reflection part helped me notice how I changed after running."</blockquote>
+            </section>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>5.4 Supporting Evaluation Data</h3>
+          <p class="card-subtitle">Questionnaire and pilot feedback that supports the task-based usability test.</p>
+          <p>
+            In addition to the 3-person Alpha usability test, our broader evaluation feedback
+            showed positive responses toward MoodRun's emotional support features:
+          </p>
+          <div class="table-wrap">
+            <table class="comparison-table evaluation-data-table">
+              <thead>
+                <tr>
+                  <th>Evaluation Result</th>
+                  <th>Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Participants reported improved mood after using or reviewing the MoodRun experience.</td>
+                  <td>82%</td>
+                </tr>
+                <tr>
+                  <td>Participants found mood-aware guidance helpful.</td>
+                  <td>78%</td>
+                </tr>
+                <tr>
+                  <td>Participants preferred the hybrid mood input method.</td>
+                  <td>75%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            These results suggest that MoodRun's emotion-aware design direction is meaningful for
+            users. However, because the Alpha usability test involved only three participants,
+            these percentages should be presented as supporting questionnaire / pilot feedback,
+            while the 3-person test should be presented as task-based usability testing.
+          </p>
         </article>
       </div>
     </section>
 
     <section class="section reveal">
       <div class="section-header">
-        <h2>Iterative Refinement</h2>
-        <p class="section-subtitle">Before and after changes based on usability feedback.</p>
+        <h2>Iterative Refinement Based on Finding 2</h2>
+        <p class="section-subtitle">Clearer recommendation logic in the Choose Your Run screen.</p>
       </div>
-      <div class="section-body two-column">
+      <div class="section-body">
         <article class="card">
-          <h3>Before</h3>
-          <ul>
-            <li>Mood options wording was ambiguous.</li>
-            <li>Prompt timing was too frequent for beginners.</li>
-            <li>Post-run screen focused too much on raw numbers.</li>
-          </ul>
+          <h3>Finding 2: Users liked the supportive tone, but wanted clearer recommendation logic</h3>
+          <p>
+            During the Alpha usability testing, users responded positively to MoodRun's supportive
+            and emotion-aware tone. However, one participant pointed out that the mood-based run
+            recommendation was not fully transparent. They understood that the app suggested a plan,
+            but wanted to know why that plan matched their selected mood.
+          </p>
         </article>
+
+        <div class="refinement-pair">
+          <article class="card">
+            <h3>Before</h3>
+            <p>
+              In the Alpha prototype, the Choose Your Run screen displayed a recommended plan with
+              basic running information, such as plan name, distance, duration, and intensity.
+              However, it did not clearly explain how the selected mood influenced the
+              recommendation. As a result, the suggested plan could appear like a generic fitness
+              preset rather than an emotionally adaptive decision.
+            </p>
+            <img class="refinement-image" src="before-feedback.png" alt="Before refinement screen showing the original recommendation card" />
+          </article>
+
+          <article class="card">
+            <h3>After</h3>
+            <p>
+              Based on this finding, we improved the Choose Your Run screen by adding a visible
+              recommendation explanation under the recommended plan. The updated card now includes
+              a "Why This Fits" section, which shows the selected mood and explains why the
+              suggested distance, pace, and intensity match that emotional state.
+            </p>
+            <img class="refinement-image" src="after-feedback.png" alt="After refinement screen showing the added recommendation explanation" />
+          </article>
+        </div>
+
         <article class="card">
-          <h3>After</h3>
-          <ul>
-            <li>Mood labels simplified with clearer emotional descriptors.</li>
-            <li>Prompt cadence reduced and tied to user pace changes.</li>
-            <li>Reflection card highlights encouragement and next small goal.</li>
-          </ul>
+          <h3>Example Recommendation Explanation</h3>
+          <pre class="code-sample"><code>Recommended because you selected STRESSED:
+This focused high-energy pace helps release pressure without asking you to sit still with it.</code></pre>
+          <p>
+            This change made the recommendation logic clearer and more emotionally meaningful.
+            Users can now see that MoodRun is not simply choosing a generic workout plan, but using
+            their mood input to shape the running experience.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Design Impact</h3>
+          <p>
+            This refinement directly addressed Finding 2 by making the adaptive logic visible
+            inside the running plan interface. It increased users' trust in the recommendation,
+            reduced confusion about why a plan was suggested, and strengthened MoodRun's
+            human-centred design by showing how emotional input affects the run plan.
+          </p>
         </article>
       </div>
     </section>
 
     <section class="section reveal">
       <div class="section-header">
-        <h2>Final Reflection</h2>
-        <p class="section-subtitle">Social and ethical implications, including AI use in the project.</p>
+        <h2>Final Reflection and Technical Reflection</h2>
+        <p class="section-subtitle">Social and ethical implications of the design, plus AI use and verification.</p>
       </div>
-      <div class="section-body two-column">
+      <div class="section-body">
         <article class="card">
-          <h3>Human-Centric & Ethical Reflection</h3>
+          <h3>Social and Ethical Reflection</h3>
           <p>
-            MoodRun supports users who may feel excluded by highly competitive
-            fitness cultures. By prioritizing adaptive encouragement, it can lower
-            psychological barriers and make running routines more inclusive.
+            MoodRun was designed as a mobile-first playful running companion for young people who
+            may feel stressed, emotionally overloaded, or unmotivated to exercise. Its social value
+            is that it reframes running as emotional self-care rather than only performance
+            tracking. By starting with mood check-in, recommending a mood-based run plan, supporting
+            route choice, and ending with reflection, MoodRun encourages users to notice their
+            emotional state and connect physical movement with emotional change.
           </p>
           <p>
-            Potential risks include over-reliance on automated recommendations and
-            misinterpretation of emotional states. To mitigate this, the design keeps
-            users in control and frames suggestions as optional guidance.
+            However, this design also involves ethical responsibilities. Mood selections, written
+            reflections, GPS location, route choices, profile details, avatar choices, and run
+            history can all be sensitive data. To reduce privacy risks, MoodRun does not use a
+            custom backend. Prototype data is stored locally in the browser through localStorage,
+            and GPS permission is only requested when route setup or live run tracking requires it.
+            The system also uses AMap for map display and geocoding, so users should understand
+            that map-related features depend on a third-party map service.
+          </p>
+          <p>
+            MoodRun's emotional features also need careful framing. The Mood AI assistant is not a
+            clinical or diagnostic tool. It is a local rule-based mood classifier that suggests a
+            possible mood from user text; it does not call an external generative AI API. Its output
+            is presented as a supportive suggestion, not as a psychological judgement. Similarly,
+            Wisdom Book reflections are motivational prompts, not professional mental health advice.
+          </p>
+          <p>
+            Accessibility and inclusion were also considered. MoodRun uses a playful retro visual
+            identity, but the interface still needs to remain readable, responsive, and usable on
+            mobile devices. The design avoids punishing users for not following a route perfectly:
+            routes are treated as recommendations, and users can continue free running even when
+            they move away from the suggested path. This supports a less judgemental and more
+            human-centred running experience.
           </p>
         </article>
+
         <article class="card">
-          <h3>AI Use Reflection</h3>
+          <h3>Use of AI in This Project</h3>
           <p>
-            We used AI tools for coding assistance and writing refinement. Core design
-            logic, research interpretation, and requirement decisions remained group-led.
-            All AI tools used should be cited in the references section according to
-            coursework policy.
+            Generative AI was used for system development and documentation support, in line with
+            the coursework permission for Portfolio, System, and Video Demo submissions. The core
+            project motivation, design direction, user research, usability findings, and
+            human-centred justification remained the group's own work. AI was used as an
+            implementation assistant, not as a replacement for design decision-making.
           </p>
+          <p>
+            The main AI-assisted prompts are documented in the
+            <a href="https://github.com/Teethy-tang/CPT208-D7-MoodRun-System/tree/main/ai-logs">/ai-logs folder</a>.
+            These included:
+          </p>
+          <ul>
+            <li>Refactoring the original MoodRun prototype into a clearer Vue 3 + TypeScript structure while preserving the retro visual identity, mood-to-run flow, localStorage compatibility, and documentation structure.</li>
+            <li>Adding AMap live map integration, including GPS path rendering, planned route overlays, current runner marker, GPS accuracy display, and map loading/error states.</li>
+            <li>Adding route setup before running, including map picking, manual search, random route generation, plan distance vs route distance comparison, and target mode selection.</li>
+            <li>Building the GPS metrics engine, including distance, pace, elapsed time, calories, remaining distance, progress, GPS quality labels, and filtering for inaccurate or unrealistic GPS points.</li>
+            <li>Adding route guidance during a run, including start-point warnings, off-route warnings, back-on-route feedback, and free-running behaviour.</li>
+            <li>Adding local Mood AI, mood-based run plans, mood profiles, checkpoint feedback, after-run mood outcomes, and Wisdom Book reflection.</li>
+            <li>Adding profile editing, avatar customisation, local run history, meditation audio, running music, voice coach, and optional voice commands.</li>
+            <li>Reviewing the system against coursework delivery requirements and preparing README / AI disclosure documentation.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Verification of AI-Assisted Code</h3>
+          <p>
+            AI-assisted code was not accepted blindly. We verified the implementation against
+            MoodRun's user requirements and coursework requirements in several ways. First, we
+            checked that the main user journey worked: home page, mood check-in, mood assistant,
+            recommended plan, route setup, running mode, summary, Wisdom Book, and profile/history.
+            Second, we ran production builds using <code>npm run build</code> after major
+            implementation and documentation changes. Third, we reviewed specific risk areas, such
+            as GPS permission denial, weak GPS status messages, unsupported speech features, map
+            loading errors, audio cleanup when leaving pages, and localStorage compatibility for
+            profile, avatar, and run history.
+          </p>
+          <p>
+            We also compared implementation decisions against the system's playful requirements.
+            For example, route guidance was checked to ensure that users were warned but not
+            punished when leaving the recommended route. The mood assistant and Wisdom Book were
+            checked to ensure they used local data and rule-based logic rather than external
+            generative AI calls.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Ethical Considerations of AI-Generated Code</h3>
+          <p>
+            Using AI for coding introduced several ethical considerations. First, AI-generated code
+            can contain hidden assumptions, bugs, or accessibility issues, so we reviewed and tested
+            generated features before including them in the final prototype. Second, because MoodRun
+            handles mood text and location-related interaction, privacy risks had to be considered
+            carefully. The final system avoids a custom backend and stores prototype data locally,
+            but users should still be informed that localStorage is not the same as secure encrypted
+            storage.
+          </p>
+          <p>
+            Third, rule-based mood classification may misunderstand user language, especially
+            because emotional expression is personal and culturally specific. To reduce this risk,
+            MoodRun presents the mood assistant's output as a suggestion rather than a final
+            judgement. The system should not claim to diagnose mental health conditions. Finally,
+            optional browser speech recognition may depend on browser or vendor services, so voice
+            control should be treated as optional and clearly communicated to users.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Reference List of AI Uses</h3>
+          <ul class="clean-list reference-list">
+            <li><strong>[1]</strong> Gemini Nano Banana, accessed on 2026-04-18, available at <a href="https://gemini.google.com/">https://gemini.google.com/</a>. Used for generating the user journey map in the illustrative figure.</li>
+            <li><strong>[2]</strong> OpenAI Codex in ChatGPT, accessed on 2026-04-22, available at <a href="https://chatgpt.com/">https://chatgpt.com/</a>. Used for AI-assisted front-end refactoring of the original MoodRun prototype into a clearer Vue/Vite project structure, while preserving the mood-to-run user flow, retro visual identity, localStorage compatibility, and repository documentation structure.</li>
+            <li><strong>[3]</strong> OpenAI Codex in ChatGPT, accessed on 2026-05-02, available at <a href="https://chatgpt.com/">https://chatgpt.com/</a>. Used for AI-assisted implementation of AMap route setup and live run tracking features, including map display, route setup, GPS path rendering, distance and pace tracking, route guidance, and related error/status handling.</li>
+            <li><strong>[4]</strong> OpenAI Codex in ChatGPT, accessed on 2026-05-04, available at <a href="https://chatgpt.com/">https://chatgpt.com/</a>. Used for AI-assisted development of MoodRun's local mood assistant, mood-based run plans, mood profiles, emotional checkpoint feedback, post-run mood arc, Wisdom Book reflection, profile editing, avatar customisation, and local run history.</li>
+            <li><strong>[5]</strong> OpenAI Codex in ChatGPT, accessed on 2026-05-04, available at <a href="https://chatgpt.com/">https://chatgpt.com/</a>. Used for AI-assisted development of meditation audio, running music, browser audio handling, voice coach support, and optional voice command features.</li>
+            <li><strong>[6]</strong> OpenAI Codex in ChatGPT, accessed on 2026-05-05, available at <a href="https://chatgpt.com/">https://chatgpt.com/</a>. Used for reviewing the MoodRun system against CPT208 coursework requirements, checking repository structure, preparing README documentation, and creating AI usage disclosure logs.</li>
+            <li><strong>[7]</strong> OpenAI ChatGPT, accessed on 2026-05-06, available at <a href="https://chatgpt.com/">https://chatgpt.com/</a>. Used for generating the System Architecture diagram showing how the MoodRun web app handles user input, app state, feature logic, browser APIs, AMap, audio features, and localStorage.</li>
+            <li><strong>[8]</strong> OpenAI ChatGPT, accessed on 2026-05-07, available at <a href="https://chatgpt.com/">https://chatgpt.com/</a>. Used for generating visual concept images and voice/audio material for the MoodRun video demo.</li>
+            <li><strong>[9]</strong> OpenAI ChatGPT / Codex, accessed on 2026-05-08, available at <a href="https://chatgpt.com/">https://chatgpt.com/</a>. Used for portfolio wording support, including refining the system architecture description, design alternatives, evaluation reflection, iterative refinement explanation, and final technical reflection.</li>
+          </ul>
         </article>
       </div>
     </section>

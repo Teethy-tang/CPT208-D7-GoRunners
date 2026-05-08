@@ -34,23 +34,22 @@
         <h1>4. Technical Implementation</h1>
         <p class="section-subtitle">Structured by coursework requirements: System Architecture, High-Fi Prototype, Individual Contributions.</p>
       </div>
-      <div class="section-body two-column">
+      <div class="section-body">
         <article class="card">
           <h3>System Architecture</h3>
-          <p><strong>Input Layer:</strong> mood check-in, run preference, optional context tags.</p>
-          <p><strong>Logic Layer:</strong> rule-based adaptation engine selects run mode and prompt strategy.</p>
-          <p><strong>Interaction Layer:</strong> guided run screen, adaptive prompts, post-run reflection card.</p>
-          <p><strong>Data Layer:</strong> stores session state, mood trend, and feedback notes.</p>
-          <p class="note">Action: insert architecture diagram image in this section.</p>
-        </article>
-        <article class="card">
-          <h3>Data Handling Flow</h3>
-          <ul>
-            <li>User input is validated on the client side before state update.</li>
-            <li>Mood + context values map to predefined adaptive recommendation rules.</li>
-            <li>Session outcomes are recorded for next-run personalization.</li>
-            <li>No sensitive identity data is required for the core prototype flow.</li>
-          </ul>
+          <img class="architecture-image" src="system-architecture.png" alt="MoodRun system architecture diagram" />
+          <p class="architecture-caption">
+            MoodRun handles data mainly inside the browser. User inputs such as mood selection,
+            short reflections, selected run plans, route choices, profile details, avatar settings,
+            and run records are first stored in the Pinia shared app state so different Vue pages
+            and feature engines can update and reuse them in real time. Data that needs to remain
+            after closing the app, such as profile information, avatar, preferences, map mode, and
+            run history, is saved in browser <code>localStorage</code>. Mood analysis is processed
+            locally through a rule-based classifier, and there is no custom backend or external
+            generative AI. External services are only used for browser-supported functions such as
+            GPS location, map display/geocoding through AMap, and audio playback, while sensitive
+            user data stays on the user's device.
+          </p>
         </article>
       </div>
     </section>
@@ -60,20 +59,10 @@
         <h2>High-Fi Prototype</h2>
         <p class="section-subtitle">Hosted system URL and repository references.</p>
       </div>
-      <div class="section-body two-column">
+      <div class="section-body">
         <article class="card">
-          <h3>Live URL</h3>
-          <p><strong>Prototype URL:</strong> <a href="#" aria-label="Live prototype link">Add deployed web app URL here</a></p>
-          <p><strong>Repository URL:</strong> <a href="#" aria-label="GitHub repository link">Add GitHub repository link here</a></p>
-          <p class="note">Action: ensure URL is public and accessible during marking period.</p>
-        </article>
-        <article class="card">
-          <h3>Implemented Core Features</h3>
-          <ul>
-            <li>Feature 1: Mood check-in and adaptive run mode generation.</li>
-            <li>Feature 2: In-run prompt adaptation by user state.</li>
-            <li>Feature 3: Post-run reflection and suggestion output.</li>
-          </ul>
+          <p><strong>Prototype URL:</strong> <a href="https://teethy-tang.github.io/CPT208-D7-MoodRun-System/" aria-label="Live prototype link">https://teethy-tang.github.io/CPT208-D7-MoodRun-System/</a></p>
+          <p><strong>Prototype Repository:</strong> <a href="https://github.com/Teethy-tang/CPT208-D7-MoodRun-System" aria-label="GitHub repository link">https://github.com/Teethy-tang/CPT208-D7-MoodRun-System</a></p>
         </article>
       </div>
     </section>
@@ -96,28 +85,28 @@
             </thead>
             <tbody>
               <tr>
-                <td>Member A</td>
-                <td>Research & Requirement</td>
-                <td>User interviews, journey mapping, requirement drafting</td>
-                <td>Interview notes, requirement docs</td>
+                <td><span class="member-name">Kaile Liu</span><span class="member-id">2363286</span></td>
+                <td>Evaluation & Documentation</td>
+                <td>Planned and documented usability testing, gathered evaluation feedback, and organised final reflection materials.</td>
+                <td>Testing, Reflection</td>
               </tr>
               <tr>
-                <td>Member B</td>
-                <td>Interaction Design</td>
-                <td>Low-fi and high-fi screens, interaction flows</td>
-                <td>Figma links, design exports</td>
+                <td><span class="member-name">Zihang Peng</span><span class="member-id">2363365</span></td>
+                <td>User Research Lead</td>
+                <td>Led user interviews, summarised research insights, and translated user needs into early design requirements.</td>
+                <td>Interview, Insights</td>
               </tr>
               <tr>
-                <td>Member C</td>
-                <td>Frontend Development</td>
-                <td>Implemented UI pages and adaptive feature logic</td>
-                <td>Commits, feature demos</td>
+                <td><span class="member-name">Sihan Feng</span><span class="member-id">2363535</span></td>
+                <td>Prototype Engineer</td>
+                <td>Built prototype flows, connected key interactions, and supported the transition from concept to clickable experience.</td>
+                <td>Flow, Interaction</td>
               </tr>
               <tr>
-                <td>Member D</td>
-                <td>Testing & Reflection</td>
-                <td>Usability testing, issue tracking, final reflection</td>
-                <td>Test sheets, before/after updates</td>
+                <td><span class="member-name">Wentao Tang</span><span class="member-id">2361322</span></td>
+                <td>Interaction & Visual Design</td>
+                <td>Designed interface style, refined visual presentation, and maintained consistency across the MoodRun system.</td>
+                <td>UI Style, System</td>
               </tr>
             </tbody>
           </table>

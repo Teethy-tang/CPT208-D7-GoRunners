@@ -344,6 +344,14 @@ main {
   margin-bottom: 1rem;
 }
 
+.evaluation-page-title {
+  margin-bottom: 0;
+}
+
+.evaluation-page-title + .evaluation-major-section {
+  padding-top: 0.7rem;
+}
+
 .section-header h1,
 .section-header h2 {
   margin: 0 0 0.55rem;
@@ -379,6 +387,75 @@ main {
   margin-top: 0.7rem;
   border: 1px solid rgba(84, 225, 255, 0.28);
   background: rgba(255, 255, 255, 0.03);
+}
+
+.evidence-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.evidence-card figure {
+  margin: 0.75rem 0 0;
+}
+
+.evidence-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+}
+
+.evidence-card figcaption {
+  margin-top: 0.65rem;
+  color: var(--text-main);
+  line-height: 1.55;
+}
+
+.evidence-caption {
+  margin: 0.65rem 0 0;
+  color: var(--text-main);
+  line-height: 1.55;
+}
+
+.evidence-card-wide {
+  grid-column: 1 / -1;
+}
+
+.evidence-feedback-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 1.1rem;
+  margin-top: 0.75rem;
+}
+
+.evidence-feedback-pair .evidence-image {
+  aspect-ratio: 16 / 10;
+}
+
+.evidence-feedback-pair .evidence-questionnaire-photo {
+  justify-self: start;
+  aspect-ratio: auto;
+}
+
+.evidence-questionnaire-figure {
+  margin: 0;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evidence-questionnaire-figure figcaption {
+  width: 100%;
+  margin-top: 0.25rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.evidence-feedback-photo {
+  justify-self: end;
 }
 
 .gap-layout {
@@ -447,6 +524,19 @@ main {
   background: rgba(255, 255, 255, 0.03);
 }
 
+.architecture-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.architecture-caption {
+  margin: 0.75rem 0 0;
+  line-height: 1.65;
+}
+
 .card {
   border: 2px solid var(--line);
   background: var(--bg-panel);
@@ -497,6 +587,186 @@ main {
   font-size: 0.92rem;
 }
 
+.sketch-board > p {
+  margin-bottom: 1rem;
+}
+
+.sketch-row {
+  padding: 0.85rem 0 1rem;
+  border-top: 1px solid rgba(84, 225, 255, 0.18);
+}
+
+.sketch-row:first-of-type {
+  border-top: 0;
+  padding-top: 0.25rem;
+}
+
+.sketch-row h4 {
+  margin: 0 0 0.65rem;
+}
+
+.sketch-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.sketch-strip-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sketch-strip figure {
+  margin: 0;
+}
+
+.sketch-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.sketch-strip figcaption {
+  margin-top: 0.4rem;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 0.8rem;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid var(--line);
+  padding: 0.68rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.comparison-table thead th {
+  background: rgba(84, 225, 255, 0.14);
+  color: var(--accent-2);
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.comparison-table td:first-child {
+  color: var(--accent-3);
+  font-weight: 700;
+}
+
+.chosen-approach-title {
+  margin-top: 1.25rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(255, 200, 87, 0.3);
+  color: var(--accent-3);
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+
+.chosen-approach-copy {
+  margin-top: 0.45rem;
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.card-subtitle {
+  margin: -0.1rem 0 0.85rem;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+.finding-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.95rem;
+}
+
+.finding-item {
+  padding: 0.85rem;
+  border: 1px solid rgba(84, 225, 255, 0.2);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.finding-item h4 {
+  margin-top: 0;
+}
+
+.quote-block {
+  margin: 0.9rem 0 0;
+  padding: 0.7rem 0.85rem;
+  border-left: 3px solid var(--accent-2);
+  background: rgba(84, 225, 255, 0.08);
+  color: #dff8ff;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.code-sample {
+  margin: 0.8rem 0 0.9rem;
+  padding: 0.85rem;
+  overflow-x: auto;
+  border: 1px solid rgba(84, 225, 255, 0.3);
+  background: rgba(0, 0, 0, 0.22);
+  color: #ffe5a8;
+  font: 0.92rem/1.55 Consolas, "Courier New", monospace;
+}
+
+.evaluation-data-table td:last-child {
+  color: var(--accent-3);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.refinement-pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.refinement-pair > .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.refinement-image {
+  display: block;
+  width: 100%;
+  margin-top: auto;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.reference-list {
+  margin-top: 0.5rem;
+  font-size: 0.94rem;
+}
+
+.reference-list li {
+  margin-bottom: 0.3rem;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+.reference-list a {
+  overflow-wrap: anywhere;
+}
+
 .contribution-table {
   width: 100%;
   border-collapse: collapse;
@@ -514,6 +784,25 @@ main {
 .contribution-table thead th {
   background: rgba(84, 225, 255, 0.14);
   color: var(--accent-2);
+}
+
+.contribution-table th:first-child,
+.contribution-table td:first-child {
+  min-width: 9.5rem;
+}
+
+.member-name,
+.member-id {
+  display: block;
+}
+
+.member-name {
+  white-space: nowrap;
+}
+
+.member-id {
+  margin-top: 0.1rem;
+  font-weight: 700;
 }
 
 .contribution-table tbody tr:nth-child(even) {
@@ -936,6 +1225,30 @@ main {
 
   .gap-columns {
     grid-template-columns: 1fr;
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-card-wide {
+    grid-column: auto;
+  }
+
+  .evidence-feedback-pair {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .finding-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sketch-strip,
+  .sketch-strip-two {
+    grid-template-columns: repeat(2, minmax(14rem, 1fr));
+    overflow-x: auto;
+    padding-bottom: 0.35rem;
   }
 
   .stakeholder-label-row {
